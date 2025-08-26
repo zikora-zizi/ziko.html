@@ -1,0 +1,27 @@
+/* CSS for index.html */
+nav {
+    text-align: center;
+
+}
+div > h1 {
+    text-align: center;
+    background-color: gold;
+} 
+
+button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: lightgreen;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+h2, p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
