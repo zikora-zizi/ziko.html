@@ -1,3 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 10px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.nav-bar {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-bar-content {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+}
 div > h1 {
 	background-color: blue;
 	color: white;
@@ -25,17 +57,14 @@ body {
 }
 
 div img + img {
-	/* Optional: extra spacing between images */
 	margin-left: 10px;
 }
-/* Center h2 and p elements */
 div > h2, div > p {
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
 }
-/* Center the h1 and button, and add a background color */
 div > h1, div > button {
 	display: block;
 	margin-left: auto;
@@ -44,21 +73,12 @@ div > h1, div > button {
 }
 
 div {
-	background-color: #f0e6ff; /* light purple, change as desired */
+	background-color: #f0e6ff; 
 	padding: 20px;
 	border-radius: 10px;
 	margin-bottom: 20px;
 }
-nav {
-	display: flex;
-	justify-content: center;
-	gap: 20px; /* optional: space between links */
-}
 
-nav a {
-	text-align: center;
-	/* optional: add more styles as needed */
-}
 div > button {
     color: black;
 }
