@@ -1,0 +1,57 @@
+ .second-row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 6px;
+	margin: 20px 0;
+}
+img[alt="second"] {
+	width: 90px;
+	height: 90px;
+	object-fit: cover;
+	border-radius: 8px;
+}
+ .donut-row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 6px;
+	margin: 20px 0;
+}
+img[alt="first"] {
+	display: inline-block;
+	width: 90px;
+	height: auto;
+	margin: 0 3px;
+	vertical-align: middle;
+	border-radius: 8px;
+}
+
+.Donut, .donut-content {
+	text-align: center;
+}
+h2 {
+	text-align: center;
+}
+nav button {
+	background-color: black;
+	color: white;
+	border: 2px solid white;
+	padding: 4px 10px;
+	border-radius: 4px;
+	cursor: pointer;
+	position: relative;
+	top: -15px;
+	margin-top: 0;
+}
+nav {
+	background-color: pink;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+nav {
+	background-color: pink;
+}
