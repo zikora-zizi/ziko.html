@@ -1,4 +1,4 @@
-/* CSS for index.html */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -25,11 +25,13 @@
     width: 80%;
     display: flex;
     justify-content: center;
-}
-
-.logo {
-    text-decoration: none;
-    color: black;
+    .nav-bar-content {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+    }
     font-size: large;
 }
 
@@ -85,24 +87,18 @@
     justify-content: space-between;
     align-items: center;
 }
-
-.donut-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    gap: 5px;
-}
+        
 
 .donut-img {
-    /* width: 30%; */
-    height: 200px;
+    
+    height: 100px;
+    width: 100px;
+    
+        object-fit: cover;
+        border-radius: 8px;
 }
 
-.donut-title {
-    font-size: 20px;
-    font-weight: bold;
-}
+
 
 .btn-container {
     display: flex;
