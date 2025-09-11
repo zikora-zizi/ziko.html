@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -25,6 +24,7 @@
     width: 80%;
     display: flex;
     justify-content: center;
+
     .nav-bar-content {
         width: 80%;
         display: flex;
@@ -32,6 +32,7 @@
         align-items: center;
         gap: 24px;
     }
+
     font-size: large;
 }
 
@@ -83,19 +84,20 @@
 }
 
 .donut {
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
-        
+
 
 .donut-img {
-    
-    height: 100px;
-    width: 100px;
-    
-        object-fit: cover;
-        border-radius: 8px;
+
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 

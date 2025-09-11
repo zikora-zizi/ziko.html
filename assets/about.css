@@ -1,41 +1,129 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0 10px;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+
+.nav-bar {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	padding: 10px;
+}
+
+.nav-link {
+	text-decoration: none;
+	color: black;
+}
+
+.nav-bar-content {
+	width: 80%;
+	display: flex;
+	justify-content: center;
+
+	.nav-bar-content {
+		width: 80%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 24px;
+	}
+
+	font-size: large;
+}
+
 .about-section {
 	background-color: pink;
-	padding: 20px;
-	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	height: 70vh;
+
 }
+
+.about-section-content {
+
+	font-size: 14px;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	gap: 10px;
+	font-weight: 300;
+	justify-content: center;
+	width: 60%;
+}
+
+.about-section-content h1 {
+	font-size: 30px;
+}
+
+.about-section-content p {
+	font-size: 20px;
+}
+
+.about-section-content-btn {
+	padding: 10px;
+	width: fit-content;
+	background-color: black;
+	color: white;
+	border: 1px solid black;
+}
+
+.about-section-content-btn:hover {
+	background-color: white;
+	color: black;
+	cursor: pointer;
+}
+
 h2 {
 	text-align: center;
 }
-img {
-	width: 100px;
-	height: 70px;
-	object-fit: cover;
-	border-radius: 8px;
-	display: inline-block;
-	margin: 0 4px;
-	vertical-align: middle;
-}
-.donut-row, .second-row {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 6px;
+
+
+
+
+
+.gallery {
+	display: grid;
+	/* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+	/* grid-template-columns: 1fr 2fr 3fr; */
+	grid-template-columns: repeat(3, 1fr);
+	gap: 5px;
 	margin: 20px 0;
 }
-div p, div b, div button {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	background-color: pink;
+
+.gallery img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	/* border-radius: 10px; */
 }
 
-
-nav {
-	background-color: white;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 24px;
-	word-spacing: 20px;
+@media (max-width:768px) {
+	.gallery {
+	grid-template-columns: 1fr;
+	margin: 20px 0;
 }
+.about-section-content p {
+	font-size: 15px;
+}
+.about-section-content {
+	padding: 5px;
+	gap: 10px;
+	font-weight: 300;
+	width: 90%;
+}
+
+}
+
+/* 
+mobile max-width:600px
+tablet max-width:768px
+laptop max-width:1024px  min-width:768px
+desktop min-width:1200px 
+*/
