@@ -1,3 +1,11 @@
+nav a:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+button, .about-section button {
+	cursor: pointer;
+}
 * {
 	box-sizing: border-box;
 	margin: 0;

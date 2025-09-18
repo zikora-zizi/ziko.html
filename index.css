@@ -1,3 +1,29 @@
+.nav-link:hover, .logo:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+button, .order-btn, .best-btn {
+    cursor: pointer;
+}
+.order-btn:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid #ff69b4;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.2s;
+
+}
+.best-btn:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.2s;
+
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -114,4 +140,12 @@
     background-color: white;
     color: black;
     border: 1px solid black;
+    
 }
+
+/* 
+mobile max-width:600px
+tablet max-width:768px
+laptop max-width:1024px  min-width:768px
+desktop min-width:1200px 
+*/
