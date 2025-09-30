@@ -3,9 +3,11 @@ nav a:hover {
 	text-decoration: underline;
 }
 
-button, .about-section button {
+button,
+.about-section button {
 	cursor: pointer;
 }
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -32,16 +34,24 @@ button, .about-section button {
 	width: 80%;
 	display: flex;
 	justify-content: center;
-
-	.nav-bar-content {
-		width: 80%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		gap: 24px;
-	}
-
+	align-items: center;
+	gap: 24px;
 	font-size: large;
+}
+
+.hamburger {
+	display: none;
+	font-size: 24px;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+.logo-small {
+	display: none;
+	font-size: 24px;
+	background: none;
+	border: none;
+	cursor: pointer;
 }
 
 .about-section {
@@ -112,20 +122,50 @@ h2 {
 	/* border-radius: 10px; */
 }
 
+/* ---------------- Responsive ---------------- */
+
+
 @media (max-width:768px) {
+	.hamburger {
+		display: block;
+	}
+	.logo-small {
+		display: block;
+	}
+
+	.nav-bar-content {
+		position: absolute;
+		top: 60px;
+		right: 0;
+		background: white;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 16px;
+		padding: 20px;
+		display: none;
+		width: 200px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	}
+
+	.nav-bar-content.active {
+		display: flex;
+	}
+
 	.gallery {
-	grid-template-columns: 1fr;
-	margin: 20px 0;
-}
-.about-section-content p {
-	font-size: 15px;
-}
-.about-section-content {
-	padding: 5px;
-	gap: 10px;
-	font-weight: 300;
-	width: 90%;
-}
+		grid-template-columns: 1fr;
+		margin: 20px 0;
+	}
+
+	.about-section-content p {
+		font-size: 15px;
+	}
+
+	.about-section-content {
+		padding: 5px;
+		gap: 10px;
+		font-weight: 300;
+		width: 90%;
+	}
 
 }
 

@@ -10,8 +10,12 @@
 
 <body>
     <section>
-         <nav class="nav-bar">
-            <div class="nav-bar-content">
+        <nav class="nav-bar">
+            <a href="index.html" class="logo-small">
+                <b>ZIKO</b>
+            </a>
+            <div class="nav-bar-content" id="nav-links">
+
                 <a class="nav-link">
                     Best Selling
                 </a>
@@ -27,32 +31,37 @@
                 <a class="nav-link">
                     Contact
                 </a>
+
             </div>
+            <button class="hamburger" id="hamburger">&#9776;</button>
+
         </nav>
         <div class="about-section">
             <div class="about-section-content">
                 <h1><b>About us</b></h1>
-            <p >
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, qui nesciunt perferendis similique totam
-                alias fugiat explicabo officia, facere excepturi repellendus deserunt, doloremque quam placeat suscipit
-                nemo voluptatum quasi dolor.
-            </p>
-            <button class="about-section-content-btn ">know more</button>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, qui nesciunt perferendis similique
+                    totam
+                    alias fugiat explicabo officia, facere excepturi repellendus deserunt, doloremque quam placeat
+                    suscipit
+                    nemo voluptatum quasi dolor.
+                </p>
+                <button class="about-section-content-btn ">know more</button>
             </div>
         </div>
         <div>
             <h2>
                 lorem ipsum
             </h2>
-           
-                <div class="gallery">
-                    <img src="about assets/about donut 2.jpg" alt="first">
-                    <img src="about assets/about donut 4.jpg" alt="first">
-                    <img src="about assets/donut 44.jpg" alt="first">
-                    <img src="assets/donut 44.jpg" alt="second">
-                    <img src="assets/donut111.jpg" alt="second">
-                    <img src="assets/donut 55.jpg" alt="second">
-                </div>
+
+            <div class="gallery">
+                <img src="about assets/about donut 2.jpg" alt="first">
+                <img src="about assets/about donut 4.jpg" alt="first">
+                <img src="about assets/donut 44.jpg" alt="first">
+                <img src="assets/donut 44.jpg" alt="second">
+                <img src="assets/donut111.jpg" alt="second">
+                <img src="assets/donut 55.jpg" alt="second">
+            </div>
 
 
 
@@ -63,6 +72,17 @@
 
 
     </section>
+
+
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.getElementById("nav-links");
+
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
+
 </body>
 
 </html>
