@@ -1,11 +1,15 @@
-.nav-link:hover, .logo:hover {
+.nav-link:hover,
+.logo:hover {
     cursor: pointer;
     text-decoration: underline;
 }
 
-button, .order-btn, .best-btn {
+button,
+.order-btn,
+.best-btn {
     cursor: pointer;
 }
+
 .order-btn:hover {
     background-color: white;
     color: black;
@@ -15,6 +19,7 @@ button, .order-btn, .best-btn {
     transition: all 0.2s;
 
 }
+
 .best-btn:hover {
     background-color: black;
     color: white;
@@ -24,6 +29,7 @@ button, .order-btn, .best-btn {
     transition: all 0.2s;
 
 }
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -140,7 +146,7 @@ button, .order-btn, .best-btn {
     background-color: white;
     color: black;
     border: 1px solid black;
-    
+
 }
 
 /* 
@@ -149,3 +155,54 @@ tablet max-width:768px
 laptop max-width:1024px  min-width:768px
 desktop min-width:1200px 
 */
+
+
+
+/* footer */
+.footer {
+    background-color: rgb(207, 202, 202);
+    padding: 40px 20px;
+    text-align: center
+}
+
+.footer h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+
+}
+
+.subscribe{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.subscribe input{
+
+}
+.subscribe button:hover{
+
+}
+
+.social-icons a{
+margin: 0 8px;
+font-size: 1.2rem;
+text-decoration: none;
+}
+.social-icon a:hover{
+
+}
+.footer .copyright{
+    margin-top: 15px;
+    font-size: 0.8rem;
+    color: #aaa;
+}
+
+@media (max-width:600px) {
+    
+}
