@@ -82,3 +82,7 @@ div {
 div > button {
     color: black;
 }
+
+/* Footer centering (if page has footer) */
+/* Footer styling */
+footer, .footer { text-align: center; background-color:#002244; color:#fff; padding:30px 10px; }

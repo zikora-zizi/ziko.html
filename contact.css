@@ -137,6 +137,10 @@ button,
 	}
 
 
+/* Footer centering */
+/* Footer styling */
+footer, .footer { text-align:center; background-color:#002244; color:#fff; padding:30px 10px; }
+
 
 }
 
