@@ -30,14 +30,9 @@ button,
 
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0 10px;
-    width: 100%;
-    overflow-x: hidden;
-}
-
+/* Mobile-first base */
+* { box-sizing: border-box; margin: 0; padding: 0 10px; }
+html, body { width:100%; overflow-x:hidden; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial; }
 
 .nav-bar {
     text-align: center;
@@ -45,6 +40,7 @@ button,
     justify-content: center;
     gap: 10px;
     padding: 10px;
+    position: relative;
 }
 
 .nav-link {
@@ -53,38 +49,29 @@ button,
 }
 
 .nav-bar-content {
-    width: 80%;
+    width: 100%;
+    max-width: 900px;
     display: flex;
     justify-content: center;
-
-    .nav-bar-content {
-        width: 80%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 24px;
-    }
-
-    font-size: large;
+    align-items: center;
+    gap: 16px;
+    font-size: 1rem;
 }
 
+.hamburger { display:none; font-size:24px; background:none; border:none; cursor:pointer; }
+.logo-small { display:none; }
+
 .hero {
-    height: 100vh;
-    background: url(./assets/donut111.jpg);
-    background-repeat: no-repeat;
-    width: 100vw;
-    background-position: center center;
-    background-size: cover;
-    /* position: relative; */
+    min-height: 60vh;
+    background: url(./assets/donut111.jpg) center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
-
+    padding: 20px 10px;
 }
 
 .hero-content {
-    font-size: 3rem;
+    font-size: clamp(1.2rem, 4vw, 2.5rem);
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -93,7 +80,8 @@ button,
     gap: 10px;
     font-weight: 300;
     justify-content: center;
-    width: 60%;
+    width: 100%;
+    max-width: 900px;
 }
 
 .order-btn {
@@ -116,38 +104,25 @@ button,
 }
 
 .donut {
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    gap: 16px;
 }
 
 
 .donut-img {
-
     width: 100%;
     height: 200px;
     object-fit: cover;
     border-radius: 10px;
+    display:block;
 }
 
 
 
-.btn-container {
-    display: flex;
-    justify-content: center;
-    margin: 10px;
-}
+.btn-container { display:flex; justify-content:center; margin:10px; }
 
-.best-btn {
-    padding: 10px;
-    width: fit-content;
-    background-color: white;
-    color: black;
-    border: 1px solid black;
-
-}
+.best-btn { padding:10px; width:fit-content; background-color:white; color:black; border:1px solid black; }
 
 /* 
 mobile max-width:600px
@@ -159,50 +134,23 @@ desktop min-width:1200px
 
 
 /* footer */
-.footer {
-    background-color: rgb(207, 202, 202);
-    padding: 40px 20px;
-    text-align: center
-}
+.footer { background-color: #002244; padding:30px 10px; text-align:center; color: #fff; }
+.footer h2 { font-size:1.25rem; margin-bottom:8px; color:#fff; }
+.footer p { margin-bottom:12px; }
+.subscribe { display:flex; justify-content:center; gap:8px; margin-top:10px; margin-bottom:12px; }
+.social-icons a{ margin:0 8px; font-size:1.2rem; text-decoration:none; }
 
-.footer h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
+.subscribe button { background:#eee; border:1px solid #ccc; padding:6px 10px; cursor:pointer; }
+.subscribe button:hover { background:#000; color:#fff; border-color:#000; }
 
-.footer p {
-    color: #666;
-    font-size: 0.9rem;
-    margin-bottom: 20px;
-
-}
-
-.subscribe{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-.subscribe input{
-
-}
-.subscribe button:hover{
-
-}
-
-.social-icons a{
-margin: 0 8px;
-font-size: 1.2rem;
-text-decoration: none;
-}
-.social-icon a:hover{
-
-}
-.footer .copyright{
-    margin-top: 15px;
-    font-size: 0.8rem;
-    color: #aaa;
-}
-
-@media (max-width:600px) {
-    
+/* Breakpoints */
+@media (min-width:700px) { .donut { grid-template-columns: repeat(3,1fr); } }
+@media (max-width:700px) {
+    .hamburger { display:block; }
+    .logo-small { display:block; }
+    .nav-bar-content { position:absolute; top:60px; right:10px; background:#fff; flex-direction:column; align-items:flex-start; gap:12px; padding:12px; display:none; width:220px; box-shadow:0 6px 12px rgba(0,0,0,0.08); }
+    .nav-bar-content.active { display:flex; }
+    .hero { min-height:40vh; }
+    .donut { grid-template-columns:1fr; }
+    .footer { text-align:center; }
 }
